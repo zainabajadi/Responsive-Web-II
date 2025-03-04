@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('experiences')">Experiences</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="page">
+        <header>
+            <div class="intro-container">
+                <div class="text-content">
+                    <h1>Hello, I'm Z</h1>
+                    <p>Welcome to my portfolio! Here's a breakdown of my experiences, Enjoy!</p>
+                    <a href="#" onclick="showPage('contact')" class="cta-button">Contact Me</a>
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/Z copy.jpg" alt="Illustration of person working">
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="page" style="display: none;">
+        <div class="job">
+            <div class="job-text">
+                <h2>HRBlock</h2>
+                <p>My experience at HRBlock involved customer service, including front desk and cash register management...</p>
+            </div>
+            <div class="logo">
+                <img src="images/Hrblock copy.png" alt="HR Block Logo">
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-text">
+                <h2>Walmart</h2>
+                <p>My experience at Walmart involved customer service, picking groceries for online shoppers...</p>
+            </div>
+            <div class="logo">
+                <img src="images/Walmart copy.png" alt="Walmart Logo">
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-text">
+                <h2>BOC Network</h2>
+                <p>My experience at BOC Network involved assisting a consultant, curating graphics for presentations...</p>
+            </div>
+            <div class="logo">
+                <img src="images/Boc copy.jpeg" alt="BOC Network Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page" style="display: none;">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:zajadi@albany.edu">zajadi@albany.edu</a></p>
+                <p>Phone: <a href="tel:+17777777777">(777) 777-7777</a></p>
+            </div>
+            <div class="image-placeholder">
+                <img src="images/Contact copy.png" alt="Thank You Logo">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
