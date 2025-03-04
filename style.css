@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: relative;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+}
+
+/* Hidden Navigation Links */
+.nav-links {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: left 0.3s ease-in-out;
+}
+
+/* Navigation Links Styling */
+.nav-links li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect - Changes to Green */
+.nav-links a:hover {
+    background-color: green;
+}
+
+/* Active Menu */
+.nav-links.active {
+    left: 0;
+}
+
+/* Home Page Styles */
+header {
+    background-color: #131313;
+    color: white;
+    padding: 80px 50px 100px;
+    text-align: center;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.image-placeholder img {
+    max-width: 300px;
+    height: auto;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Contact Me Button Inside Bio */
+.cta-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Job Section */
+.job {
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    border-left: 5px solid rgb(6, 191, 37);
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Contact Page */
+
+#contact {
+    background-color: #000000;
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+.contact-info {
+    color: rgba(255, 255, 255, 0.871);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .intro-container, .job {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .image-placeholder img {
+        max-width: 200px;
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+}
